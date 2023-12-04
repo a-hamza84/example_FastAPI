@@ -7,7 +7,7 @@ from task_mngt import task_mngt
 import uvicorn
 
 api_router = APIRouter()
-api_router.include_router(login.router, prefix="/tasks", tags=["login"])
+api_router.include_router(login.router, prefix="/onboarding", tags=["login"])
 api_router.include_router(task_mngt.router, prefix="/tasks", tags=["task_mngt"])
 
 app = FastAPI()
